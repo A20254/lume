@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Heights Minibar - Elevated Cocktail Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Glass Heights</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chefs">Our Chefs</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reservations" class="btn-primary">Order Online</a></li>
+        
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Elevate Your Night</h1>
+            <p>Artisanal cocktails crafted with precision and passion</p>
+            <a href="#reservations" class="btn-primary">Reserve Your Table</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to Explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Signature Creations</h2>
+            <p class="section-subtitle">Crafted with premium spirits and seasonal ingredients</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="cocktails">Cocktails</button>
+                <button class="tab-btn" data-category="spirits">Spirits</button>
+                <button class="tab-btn" data-category="small-plates">Small Plates</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Cocktails -->
+                <div class="menu-category active" id="cocktails">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Cloud Nine</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="item-desc">Hendrick's Gin, St. Germain, cucumber, lime, tonic foam</p>
+                        <span class="item-badge">BESTSELLER</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Smoke & Mirrors</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="item-desc">Mezcal, Aperol, pineapple, lime, smoked salt rim</p>
+                        <span class="item-badge">CHEF'S PICK</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Golden Hour</h3>
+                            <span class="price">$17</span>
+                        </div>
+                        <p class="item-desc">Bourbon, turmeric honey, lemon, orange bitters</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Midnight Orchid</h3>
+                            <span class="price">$19</span>
+                        </div>
+                        <p class="item-desc">Vodka, crème de violette, lemon, butterfly pea tea</p>
+                        <span class="item-badge">NEW</span>
+                    </div>
+                </div>
+                
+                <!-- Spirits -->
+                <div class="menu-category" id="spirits">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Whiskey Flight</h3>
+                            <span class="price">$28</span>
+                        </div>
+                        <p class="item-desc">Three 1oz pours of premium whiskeys (changes weekly)</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Rare Tequila Selection</h3>
+                            <span class="price">$24</span>
+                        </div>
+                        <p class="item-desc">2oz pour of our current rare tequila offering</p>
+                        <span class="item-badge">LIMITED</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Cognac Experience</h3>
+                            <span class="price">$32</span>
+                        </div>
+                        <p class="item-desc">Louis XIII 0.5oz pour with dark chocolate pairing</p>
+                    </div>
+                </div>
+                
+                <!-- Small Plates -->
+                <div class="menu-category" id="small-plates">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Truffle Arancini</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="item-desc">Crispy risotto balls with black truffle aioli</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Charcuterie Board</h3>
+                            <span class="price">$22</span>
+                        </div>
+                        <p class="item-desc">Artisan meats, cheeses, accompaniments (serves 2)</p>
+                        <span class="item-badge">BESTSELLER</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tuna Tartare</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="item-desc">Sushi-grade tuna, avocado, wonton crisps, yuzu dressing</p>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chocolate Sphere</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="item-desc">Dark chocolate shell with raspberry mousse, melts with warm sauce</p>
+                        <span class="item-badge">SIGNATURE</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Boozy Affogato</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="item-desc">Vanilla gelato with espresso and your choice of liqueur</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-footer">
+                <p>Ask about our seasonal specials and off-menu creations</p>
+                <a href="menu.html" class="btn-outline">View Full Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section class="chefs-section" id="chefs">
+        <div class="container">
+            <h2 class="section-title">Meet Our Mixologists</h2>
+            <p class="section-subtitle">The talented creators behind your experience</p>
+            
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-img" style="background-image: url(image/photo_tatti-IMWS-ww2-PU-unsplash.jpg)">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Elena Vasquez</h3>
+                        <span class="chef-title">Head Mixologist</span>
+                        <p>Formerly of The Aviary, Elena brings molecular mixology techniques to create visually stunning cocktails.</p>
+                    </div>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-img" style="background-image: url(image/daniel-kV4-vFoamV4-unsplash.jpg)">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Marcus Chen</h3>
+                        <span class="chef-title">Spirits Curator</span>
+                        <p>With over 15 years in the industry, Marcus selects only the finest spirits for our collection.</p>
+                    </div>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-img" style="background-image: url(image/arsham-baseri-RQdXS861Tyc-unsplash.jpg)">
+                        <div class="chef-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Sophie Laurent</h3>
+                        <span class="chef-title">Pastry Chef</span>
+                        <p>Sophie's desserts are works of art designed to complement our cocktail program perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="reservations-section" id="reservations">
+        <div class="container">
+            <div class="reservations-content">
+                <h2 class="section-title">Reserve Your Experience</h2>
+                <p class="section-subtitle">Book your table for an unforgettable evening</p>
+                
+                <form class="reservation-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                                <option value="9+">Large Party (9+)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Visit our Glass Heighs Apartments Kampala</p>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Kulambiro Kaboko Zone<br>Off Doctor's Link,<br>Kampala, Uganda</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Hours</h3>
+                        <p><strong>Monday - Thursday:</strong> 5pm - 12am<br>
+                        <strong>Friday - Saturday:</strong> 5pm - 2am<br>
+                        <strong>Sunday:</strong> 5pm - 11pm</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Contact</h3>
+                        <p><strong>Phone:</strong> (256) 790-266954<br>
+                        <strong>Email:</strong> reservations@glassheights.com</p>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1234567890123!2d32.5944!3d0.3861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbf4e1f1a1aab%3A0x123456789abcdef!2sKulambiro%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1690000000001!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Glass Heights</h3>
+                    <p>Elevating cocktail culture to new heights with innovative mixology and breathtaking views.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#chefs">Our Team</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Kulambiro Kaboko Zone, Floor 42, Uganda</li>
+                        <li><i class="fas fa-phone-alt"></i> (256) 790-266954</li>
+                        <li><i class="fas fa-envelope"></i> hello@glassheights.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and event invitations</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glass Heights Minibar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
